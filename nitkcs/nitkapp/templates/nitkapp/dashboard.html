@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<style media="screen">
+  @import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+
+  body {
+      font-family: 'Rubik', sans-serif;
+      min-height: 100% ;
+      background-color: #F8F9FB !important
+  }
+
+.container-fluid {
+    margin-top: 101px;
+    color: #000 !important
+}
+
+
+.card {
+    background-color: white !important
+}
+
+p {
+    font-size: calc(12px + (14 - 12) * ((100vw - 360px) / (1600 - 360))) !important;
+    display: fkex
+}
+
+h3 {
+    font-size: calc(24px + (30 - 24) * ((100vw - 360px) / (1600 - 360))) !important
+}
+
+.social {
+    font-size: 21px !important
+}
+
+.color-text {
+    color: #757575 !important
+}
+
+button {
+    font-size: calc(12px + (13 - 12) * ((100vw - 360px) / (1600 - 320))) !important;
+    background-color: #2CA6FB !important;
+    padding-left: calc(20px + (28 - 20) * ((100vw - 360px) / (1600 - 360))) !important;
+    padding-right: calc(20px + (28 - 20) * ((100vw - 360px) / (1600 - 360))) !important;
+    padding-top: calc(10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important;
+    padding-bottom: calc(10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important
+
+}
+#piechart1,#piechart2{
+      width: auto;
+      margin-left: 30%;
+}
+button:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline-width: 0
+}
+
+.card-header{
+  background-color: rgba(94, 89, 89, 0.959);
+}
+.card-body{
+  background-color: rgba(165, 165, 165, 0.959);
+}
+
+footer {
+
+    color: #caced1 !important
+}
+#headingwa{
+  text-align: center;
+}
+#idforlist {
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+
+.Careers {
+    cursor: pointer;
+    color: #1E88E5
+}
+
+.row-1 {
+    background-color: #1E242A !important
+}
+
+.row-2 {
+    background-color: #28323C !important
+}
+</style>
+  </head>
+  <body>
+
+    {% include 'nitkapp/navbar.html'%}
+
+    {% block content %}
+
+
+    {% endblock%}
+
+
+
+  </body>
+  {% include 'nitkapp/footbar.html'%}
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</html>

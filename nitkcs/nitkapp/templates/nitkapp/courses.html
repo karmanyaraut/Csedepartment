@@ -1,0 +1,22 @@
+{% extends 'nitkapp/dashboard.html'%}
+{% block content %}
+
+<div class="container">
+{% for  i in coursesobj %}
+  <div class="row">
+    <div class="col"style="margin: auto" ><img src="{{ media_url }}{{ i.photo }}" class="img-thumbnail" style="min-height:150px; min-width :150px;max-width:200px;max-height:250px;"></div>
+    <div class="col">
+        <table class="table">
+           <tr>
+             <th scope="row">{{i.name}}</th>
+             <td>{{i.about}}</td>
+           </tr>
+
+           </table>
+         </div>
+       </div>
+       <hr>
+  {% endfor %}
+</div>
+
+{% endblock %}

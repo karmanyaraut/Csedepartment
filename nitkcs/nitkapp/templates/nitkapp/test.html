@@ -1,0 +1,37 @@
+
+
+<form  action="" method="POST" style="margin-left:40%;margin-top:40px" >
+  {% csrf_token %}
+  {{ form.as_p }}
+
+  <button type="submit" class="btn btn-primary" name="" style="margin-bottom:30px;" >Ok</button>
+</form>
+
+<div class="container">
+{% for  i in img %}
+  <div class="row">
+    <div class="col"style="margin: auto" ><img src="{{ media_url }}{{ i.profile_pic }}" class="img-thumbnail" style="min-height:150px; min-width :150px;max-width:200px;max-height:250px;"></div>
+    <div class="col">
+        <table class="table">
+           <tr>
+             <th scope="row">Name</th>
+             <td>{{i.name}}</td>
+           </tr>
+           <tr>
+             <th scope="row">About</th>
+             <td>{{i.about_faculty}}</td>
+           </tr>
+           <tr>
+             <th scope="row">Academics</th>
+             <td>{{i.academic}}</td>
+            </tr>
+            <tr>
+              <th scope="row">Contact</th>
+              <td><a href="{{i.faculty_website}}">{{i.faculty_website}}</a></td>
+             </tr>
+           </table>
+         </div>
+       </div>
+       <hr>
+  {% endfor %}
+</div>

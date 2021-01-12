@@ -1,0 +1,26 @@
+{% extends 'nitkapp/dashboard.html'%}
+
+{% block content %}
+
+  <h2 style="text-align :center;margin-top:40px"> R & d Projects</h2>
+
+  {% for i in researchobj %}
+  <div id="accordion">
+    <div class="card">
+      <div class="card-header" style="background-color : white;margin:auto;" id="heading{{i.headingforesearch}}" >
+        <h5 class="mb-0">
+          <button class="btn btn-link" data-toggle="collapse" data-target="#collapse{{i.headingforesearch}}" style ="color:black;" aria-expanded="false" aria-controls="collapse{{i.headingforesearch}}">
+            {{i.name}}
+          </button>
+        </h5>
+      </div>
+    <div id="collapse{{i.headingforesearch}}" class="collapse" aria-labelledby="heading{{i.headingforesearch}}" data-parent="#accordion"style="background-color : white;margin:auto;">
+        <div class="card-body"style="background-color : white;margin:auto;">
+          {{i.sponsored}}
+      </div>
+      </div>
+    </div>
+
+{% endfor %}
+
+{% endblock %}
